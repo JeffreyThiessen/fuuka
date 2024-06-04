@@ -2,29 +2,73 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript">
+  var images = [
+"images/1.gif",
+"images/2.jpg",
+"images/3.png",
+"images/4.jpg",
+"images/5.png",
+"images/6.jpg",
+"images/7.png",
+"images/8.jpg",
+"images/9.png",
+"images/10.jpg",
+"images/11.png",
+"images/12.jpg",
+"images/13.png",
+"images/14.jpg",
+"images/15.png",
+"images/16.jpg",
+"images/17.png",
+"images/18.jpg",
+"images/19.png",
+"images/21.png",
+"images/22.jpg",
+"images/23.jpg",
+"images/24.jpg",
+"images/25.jpg",
+"images/26.jpg",
+"images/27.jpg",
+"images/28.jpg",
+"images/29.jpg",
+"images/30.jpg",
+"images/31.jpg",
+"images/32.jpg",
+"images/33.jpg",
+"images/34.jpg",
+"images/35.jpg"
+];
+
+  function randomator() {
+    document.getElementsByClassName("mainview")[0].style.backgroundImage = "url(" + images[Math.floor(Math.random() * images.length)] + ")";
+  }
+  randomator();
+</script>
+
 <style>
 body, html {
   height: 100%;
   margin: 0;
 }
 
-.bg {
-  /* The image used */
-  background-image: url("1457931314779.jpg");
-
-  /* Full height */
+.mainview {
   height: 100%; 
-
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 </style>
 </head>
 <body>
 
-<div class="bg"></div>
+<div class="mainview"> 
+  <script type="text/javascript"> 
+    randomator();
+  </script>
+</div>
 
 </body>
 </html>
